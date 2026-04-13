@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UI Comparison</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background: #050010;
+    color: white;
+    padding: 40px;
+}
+
+/* grid background */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(rgba(0,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,0,255,0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: -1;
+}
+
+/* container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 34px;
+    color: #fff;
+    text-shadow: 0 0 10px #00ffc8, 0 0 15px #ff00ff;
+}
+
+/* intro box */
+.intro {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.03);
+    border-radius: 10px;
+}
+
+.intro p {
+    color: #ccc;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* headings */
+th {
+    padding: 18px;
+    text-align: left;
+    border: 1px solid rgba(255,255,255,0.1);
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 0 0 8px white;
+}
+
+/* Minimalist heading */
+th:nth-child(2) {
+    color: #00ffc8;
+    text-shadow: 0 0 10px #00ffc8;
+}
+
+/* Complex heading */
+th:nth-child(3) {
+    color: #ff4fd8;
+    text-shadow: 0 0 10px #ff4fd8;
+}
+
+/* cells */
+td {
+    padding: 18px;
+    border: 1px solid rgba(255,255,255,0.1);
+    vertical-align: top;
+    color: #ddd;
+    background: rgba(255,255,255,0.03);
+    line-height: 1.8;
+}
+
+/* row labels */
+.label {
+    color: #fff;
+    font-weight: bold;
+    background: rgba(255,255,255,0.05);
+}
+
+/* hover glow */
+tr:hover td {
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* conclusion */
+.section {
+    margin-top: 35px;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.03);
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 0 8px #00ffc8, 0 0 8px #ff00ff;
+}
+
+.section p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+/* button */
+.button-box {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 22px;
+    border: 1px solid #00ffc8;
+    background: transparent;
+    color: #00ffc8;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 15px #00ffc8;
+    background: rgba(0,255,200,0.08);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Minimalist UI vs Complex UI</h1>
+
+    <div class="intro">
+        <p>
+            User Interface (UI) design plays a major role in shaping how users interact with websites
+            and applications. Two important styles of interface design are Minimalist UI and Complex UI.
+            While minimalist UI focuses on simplicity and clarity, complex UI emphasizes rich visuals,
+            multiple features, and stronger user engagement.
+        </p>
+        <p>
+            The following comparison highlights the major differences between these two design styles
+            based on layout, usability, appearance, and user experience.
+        </p>
+    </div>
+
+    <table>
+        <tr>
+            <th>Comparison Factor</th>
+            <th>Minimalist UI</th>
+            <th>Complex UI</th>
+        </tr>
+
+        <tr>
+            <td class="label">Definition</td>
+            <td>A design style that focuses on simplicity, clarity, and only essential elements.</td>
+            <td>A design style that uses multiple visual and interactive elements for a richer experience.</td>
+        </tr>
+
+        <tr>
+            <td class="label">Layout</td>
+            <td>Clean, spacious, and uncluttered layout with more whitespace.</td>
+            <td>Detailed, layered, and content-heavy layout with many sections.</td>
+        </tr>
+
+        <tr>
+            <td class="label">Visual Style</td>
+            <td>Simple colors, limited graphics, and minimal decoration.</td>
+            <td>Rich visuals, animations, icons, effects, and advanced styling.</td>
+        </tr>
+
+        <tr>
+            <td class="label">User Experience</td>
+            <td>Easy to understand and navigate with less distraction.</td>
+            <td>More immersive and engaging, but may require more attention from users.</td>
+        </tr>
+
+        <tr>
+            <td class="label">Advantages</td>
+            <td>Improves readability, speed, focus, and usability.</td>
+            <td>Provides more features, interaction, and visual appeal.</td>
+        </tr>
+
+        <tr>
+            <td class="label">Disadvantages</td>
+            <td>May feel too plain or too simple if overdone.</td>
+            <td>Can become overwhelming and increase cognitive load if not organized properly.</td>
+        </tr>
+
+        <tr>
+            <td class="label">Best Used For</td>
+            <td>Educational websites, blogs, portfolios, and productivity apps.</td>
+            <td>Gaming websites, dashboards, futuristic interfaces, and feature-rich applications.</td>
+        </tr>
+
+        <tr>
+            <td class="label">Overall Impact</td>
+            <td>Creates a calm, elegant, and focused experience.</td>
+            <td>Creates a dynamic, powerful, and visually intense experience.</td>
+        </tr>
+    </table>
+
+    <div class="section">
+        <h2>Conclusion</h2>
+        <p>
+            Both Minimalist UI and Complex UI are effective in different situations. Minimalist UI is
+            better when clarity, ease of use, and simplicity are the main goals. On the other hand,
+            Complex UI is more suitable when visual richness, advanced interaction, and feature-heavy
+            design are required.
+        </p>
+        <p>
+            Therefore, the choice between minimalist and complex UI depends on the purpose of the website,
+            the target audience, and the type of experience the designer wants to create.
+        </p>
+    </div>
+
+    <div class="button-box">
+        <button onclick="location.href='index.html'">Back</button>
+    </div>
+
+</div>
+
+</body>
+</html>
